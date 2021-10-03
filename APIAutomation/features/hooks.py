@@ -11,4 +11,4 @@ def before_feature(context, scenario):
 
 
 def after_feature(context, scenario):
-    print('From environment file : before_feature')
+    print('From environment file : after_feature')
