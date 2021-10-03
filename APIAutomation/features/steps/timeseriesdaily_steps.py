@@ -1,18 +1,13 @@
 import time
 from os import path
 from behave import *
-import json
 import requests
-import configparser
 from utilities.config import *
 from utilities.logger import *
-import logging
 
 
 @given('given time series url with required params')
 def given_time_series_url_with_required_params(context):
-    context.configuration = configparser.ConfigParser()
-    context.configuration.read('utilities/properties.ini')
     context.baseurl = get_config()['API']['baseurl']
 
 
@@ -77,7 +72,8 @@ def with_partial_optional_params(context):
 
 @when('hit url without key')
 def hit_url_without_key(context):
-    request_url = context.baseurl + "function=TIME_SERIES_DAILY&symbol=" + get_config()['API']['symbol'] + "&outputsize=compact&datatype=json&apikey="
+    request_url = context.baseurl + "function=TIME_SERIES_DAILY&symbol=" + get_config()['API'][
+        'symbol'] + "&outputsize=compact&datatype=json&apikey="
     response_text = "Our standard API call frequency is 5 calls per minute and 500 calls per day"
     Log.logger.info('Request URL is ' + request_url)
     print('Request URL is ' + request_url)
@@ -96,7 +92,8 @@ def hit_url_without_key(context):
 
 @when('hit url with with outputsize as full')
 def with_outputsize_as_full(context):
-    request_url = context.baseurl + "function=TIME_SERIES_DAILY&symbol=" + get_config()['API']['symbol'] + "&outputsize=full&datatype=json&apikey=" + get_config()['API']['key']
+    request_url = context.baseurl + "function=TIME_SERIES_DAILY&symbol=" + get_config()['API'][
+        'symbol'] + "&outputsize=full&datatype=json&apikey=" + get_config()['API']['key']
     response_text = "Our standard API call frequency is 5 calls per minute and 500 calls per day"
     Log.logger.info('Request URL is ' + request_url)
     print('Request URL is ' + request_url)
@@ -115,7 +112,8 @@ def with_outputsize_as_full(context):
 
 @when('hit url with with datatype as csv')
 def url_with_datatype_as_csv(context):
-    request_url = context.baseurl + "function=TIME_SERIES_DAILY&symbol=" + get_config()['API']['symbol'] + "&outputsize=full&datatype=csv&apikey=" + get_config()['API']['key']
+    request_url = context.baseurl + "function=TIME_SERIES_DAILY&symbol=" + get_config()['API'][
+        'symbol'] + "&outputsize=full&datatype=csv&apikey=" + get_config()['API']['key']
     response_text = "Our standard API call frequency is 5 calls per minute and 500 calls per day"
     Log.logger.info('Request URL is ' + request_url)
     print('Request URL is ' + request_url)

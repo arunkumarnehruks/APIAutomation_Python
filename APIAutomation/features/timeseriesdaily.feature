@@ -1,4 +1,4 @@
-Feature: Verify get request is working as expected
+Feature: Verify get request for Time Series (Daily) is working as expected
 
   Scenario: Verify response of Time Series (Daily) get request with only all mandatory query parameters
     Given given time series url with required params
