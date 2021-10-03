@@ -1,15 +1,15 @@
-<testsuite name="timeseriesdaily.Verify get request is working as expected" tests="7" errors="0" failures="0" skipped="0" time="75.929226" timestamp="2021-10-03T14:32:15.791040" hostname="IN-HSI1361"><testcase classname="timeseriesdaily.Verify get request is working as expected" name="Verify response of Time Series (Daily) get request with only all mandatory query parameters" status="passed" time="0.874552"><system-out>
+<testsuite name="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" tests="7" errors="0" failures="0" skipped="0" time="66.190128" timestamp="2021-10-03T19:59:07.949481" hostname="IN-HSI1361"><testcase classname="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" name="Verify response of Time Series (Daily) get request with only all mandatory query parameters" status="passed" time="0.88297"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request with only all mandatory query parameters
-    Given given time series url with required params ... passed in 0.006s
-    When hit url without optional params ... passed in 0.840s
+    Given given time series url with required params ... passed in 0.002s
+    When hit url without optional params ... passed in 0.859s
     Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data information has 5 items ... passed in 0.002s
-    And 100 points are only returned ... passed in 0.000s
-    And response is in JSON format ... passed in 0.001s
-    And every entry in Time Series (Daily) has 5 items ... passed in 0.024s
-    And ensure Content-Type header value is displayed as application/json ... passed in 0.001s
+    And Meta data information has 5 items ... passed in 0.001s
+    And 100 points are only returned ... passed in 0.001s
+    And response is in JSON format ... passed in 0.000s
+    And every entry in Time Series (Daily) has 5 items ... passed in 0.019s
+    And ensure Content-Type header value is displayed as application/json ... passed in 0.000s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -729,18 +729,18 @@ Response is {
 }
 
 ]]>
-</system-out></testcase><testcase classname="timeseriesdaily.Verify get request is working as expected" name="Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.1 " status="passed" time="0.869366"><system-out>
+</system-out></testcase><testcase classname="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" name="Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.1 " status="passed" time="0.848406"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario Outline: Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.1 
-    Given given time series url with required params ... passed in 0.003s
-    When hit url with all optional params with symbol value as IBM ... passed in 0.838s
+    Given given time series url with required params ... passed in 0.002s
+    When hit url with all optional params with symbol value as IBM ... passed in 0.824s
     Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data information has 5 items ... passed in 0.000s
-    And Meta data has 2. Symbol value is same as IBM provided in query param ... passed in 0.001s
+    And Meta data information has 5 items ... passed in 0.001s
+    And Meta data has 2. Symbol value is same as IBM provided in query param ... passed in 0.000s
     And 100 points are only returned ... passed in 0.001s
     And response is in JSON format ... passed in 0.000s
-    And every entry in Time Series (Daily) has 5 items ... passed in 0.025s
+    And every entry in Time Series (Daily) has 5 items ... passed in 0.019s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -1460,18 +1460,18 @@ Response is {
 }
 
 ]]>
-</system-out></testcase><testcase classname="timeseriesdaily.Verify get request is working as expected" name="Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.2 " status="passed" time="1.35018"><system-out>
+</system-out></testcase><testcase classname="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" name="Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.2 " status="passed" time="0.840809"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario Outline: Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.2 
-    Given given time series url with required params ... passed in 0.004s
-    When hit url with all optional params with symbol value as TSCO.LON ... passed in 1.327s
-    Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data information has 5 items ... passed in 0.001s
-    And Meta data has 2. Symbol value is same as TSCO.LON provided in query param ... passed in 0.001s
+    Given given time series url with required params ... passed in 0.001s
+    When hit url with all optional params with symbol value as TSCO.LON ... passed in 0.796s
+    Then response is seen with status code as 200 ... passed in 0.002s
+    And Meta data information has 5 items ... passed in 0.003s
+    And Meta data has 2. Symbol value is same as TSCO.LON provided in query param ... passed in 0.003s
     And 100 points are only returned ... passed in 0.001s
-    And response is in JSON format ... passed in 0.000s
-    And every entry in Time Series (Daily) has 5 items ... passed in 0.016s
+    And response is in JSON format ... passed in 0.001s
+    And every entry in Time Series (Daily) has 5 items ... passed in 0.034s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -2191,15 +2191,15 @@ Response is {
 }
 
 ]]>
-</system-out></testcase><testcase classname="timeseriesdaily.Verify get request is working as expected" name="Verify response of Time Series (Daily) get request with partial optional query parameters i.e. datatype is missing" status="passed" time="0.744257"><system-out>
+</system-out></testcase><testcase classname="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" name="Verify response of Time Series (Daily) get request with partial optional query parameters i.e. datatype is missing" status="passed" time="1.187343"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request with partial optional query parameters i.e. datatype is missing
     Given given time series url with required params ... passed in 0.002s
-    When hit url with partial optional params (without datatype parameter) ... passed in 0.739s
+    When hit url with partial optional params (without datatype parameter) ... passed in 1.182s
     Then response is seen with status code as 200 ... passed in 0.001s
     And 100 points are only returned ... passed in 0.001s
-    And response is in JSON format ... passed in 0.002s
+    And response is in JSON format ... passed in 0.001s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -2919,17 +2919,17 @@ Response is {
 }
 
 ]]>
-</system-out></testcase><testcase classname="timeseriesdaily.Verify get request is working as expected" name="Verify response of Time Series (Daily) get request when outputsize is full" status="passed" time="68.529051"><system-out>
+</system-out></testcase><testcase classname="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" name="Verify response of Time Series (Daily) get request when outputsize is full" status="passed" time="59.155171"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request when outputsize is full
-    Given given time series url with required params ... passed in 0.004s
-    When hit url with with outputsize as full ... passed in 8.235s
+    Given given time series url with required params ... passed in 0.002s
+    When hit url with with outputsize as full ... passed in 7.633s
     Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data has 4. Output Size value as Full Size ... passed in 0.011s
-    And 20+ years of historical data are returned ... passed in 0.014s
+    And Meta data has 4. Output Size value as Full Size ... passed in 0.009s
+    And 20+ years of historical data are returned ... passed in 0.010s
     And response is in JSON format ... passed in 0.000s
-    And every entry in Time Series (Daily) has 5 items ... passed in 60.264s
+    And every entry in Time Series (Daily) has 5 items ... passed in 51.500s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -41561,15 +41561,15 @@ Response is {
 }
 
 ]]>
-</system-out></testcase><testcase classname="timeseriesdaily.Verify get request is working as expected" name="Verify response of Time Series (Daily) get request when datatype is csv" status="passed" time="2.429671"><system-out>
+</system-out></testcase><testcase classname="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" name="Verify response of Time Series (Daily) get request when datatype is csv" status="passed" time="2.361659"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request when datatype is csv
     Given given time series url with required params ... passed in 0.002s
-    When hit url with with datatype as csv ... passed in 2.412s
+    When hit url with with datatype as csv ... passed in 2.346s
     Then response is seen with status code as 200 ... passed in 0.000s
-    And csv file is downloaded ... passed in 0.013s
-    And ensure all columns are displayed in file ... passed in 0.003s
+    And csv file is downloaded ... passed in 0.012s
+    And ensure all columns are displayed in file ... passed in 0.002s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -47096,12 +47096,12 @@ Response is timestamp,open,high,low,close,volume
 
 
 ]]>
-</system-out></testcase><testcase classname="timeseriesdaily.Verify get request is working as expected" name="Negative test case - Verify response of Time Series (Daily) get request when no key is provided" status="passed" time="1.132149"><system-out>
+</system-out></testcase><testcase classname="timeseriesdaily.Verify get request for Time Series (Daily) is working as expected" name="Negative test case - Verify response of Time Series (Daily) get request when no key is provided" status="passed" time="0.913771"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Negative test case - Verify response of Time Series (Daily) get request when no key is provided
-    Given given time series url with required params ... passed in 0.003s
-    When hit url without key ... passed in 1.128s
+    Given given time series url with required params ... passed in 0.001s
+    When hit url without key ... passed in 0.911s
     Then reponse should display error ... passed in 0.002s
 
 @scenario.end

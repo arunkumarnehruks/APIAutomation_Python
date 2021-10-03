@@ -193,22 +193,22 @@ h1 {
             <ul class="toc">
             
                 
-                <li>timeseriesdaily.Verify get request is working as expected
+                <li>timeseriesdaily.Verify get request for Time Series (Daily) is working as expected
                 <ul>
                     
-                    <li><a href="#94de2631-5fca-49d5-80d3-9f37fd200f3c">Verify response of Time Series (Daily) get request with only all mandatory query parameters</a></li>
+                    <li><a href="#f6e0cc46-2dfa-4878-855c-ce7e02e483f8">Verify response of Time Series (Daily) get request with only all mandatory query parameters</a></li>
                     
-                    <li><a href="#9e099591-c18a-4372-8d71-d0982e17a286">Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.1 </a></li>
+                    <li><a href="#e560aabc-030d-4613-82ba-18c409719b8c">Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.1 </a></li>
                     
-                    <li><a href="#31efe9fa-2bc7-4433-8e4e-d1b631a7e100">Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.2 </a></li>
+                    <li><a href="#e6a579ee-d063-4c55-983a-768589601db9">Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.2 </a></li>
                     
-                    <li><a href="#3af439fc-908e-44b2-aa2f-80026e5a492d">Verify response of Time Series (Daily) get request with partial optional query parameters i.e. datatype is missing</a></li>
+                    <li><a href="#c85a5140-3b7a-44f2-ae96-3666b1464a7c">Verify response of Time Series (Daily) get request with partial optional query parameters i.e. datatype is missing</a></li>
                     
-                    <li><a href="#1598cd8a-98ad-47d8-8f58-0ee20c952393">Verify response of Time Series (Daily) get request when outputsize is full</a></li>
+                    <li><a href="#561982f7-3ec9-476d-b87e-b5c2fada8483">Verify response of Time Series (Daily) get request when outputsize is full</a></li>
                     
-                    <li><a href="#37908946-df02-4e3e-811f-724ed1716a79">Verify response of Time Series (Daily) get request when datatype is csv</a></li>
+                    <li><a href="#7e62bde4-229f-4f8c-8a33-521d19986d9d">Verify response of Time Series (Daily) get request when datatype is csv</a></li>
                     
-                    <li><a href="#d671edd6-ffd0-41c9-946b-846ff8a0eb80">Negative test case - Verify response of Time Series (Daily) get request when no key is provided</a></li>
+                    <li><a href="#d4fb1d05-11ef-4c78-8abc-75682d0bcfbf">Negative test case - Verify response of Time Series (Daily) get request when no key is provided</a></li>
                     
                 </ul>
                 </li>
@@ -244,14 +244,14 @@ h1 {
 
 
     <div class="testsuite">
-        <h2>Test Suite: timeseriesdaily.Verify get request is working as expected</h2>
-        <a id="0be801c0-3798-4371-a342-a5cc9a87757e"></a>
+        <h2>Test Suite: timeseriesdaily.Verify get request for Time Series (Daily) is working as expected</h2>
+        <a id="74ab46e0-4a69-4673-83b2-0ab230ffd824"></a>
         
         
         <h3>Results</h3>
         <table class="proplist">
             <tr>
-                <th>Duration</th><td>75.9 sec</td>
+                <th>Duration</th><td>66.2 sec</td>
             </tr>
             <tr>
                 <th>Tests</th><td>7</td>
@@ -265,11 +265,11 @@ h1 {
             <h3>Tests</h3>
             
             <div class="testclass">
-                <h4>timeseriesdaily.Verify get request is working as expected</h4>
+                <h4>timeseriesdaily.Verify get request for Time Series (Daily) is working as expected</h4>
                 <div class="testcases">
                 
                     <div class="test outcome outcome-passed">
-                        <a id="94de2631-5fca-49d5-80d3-9f37fd200f3c"></a>
+                        <a id="f6e0cc46-2dfa-4878-855c-ce7e02e483f8"></a>
                         <table class="proplist">
                             <tr><th>Test case:</th><td><b>Verify response of Time Series (Daily) get request with only all mandatory query parameters</b></td></tr>
                             <tr><th>Outcome:</th><td>Passed</td></tr>
@@ -292,14 +292,14 @@ h1 {
 
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request with only all mandatory query parameters
-    Given given time series url with required params ... passed in 0.006s
-    When hit url without optional params ... passed in 0.840s
+    Given given time series url with required params ... passed in 0.002s
+    When hit url without optional params ... passed in 0.859s
     Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data information has 5 items ... passed in 0.002s
-    And 100 points are only returned ... passed in 0.000s
-    And response is in JSON format ... passed in 0.001s
-    And every entry in Time Series (Daily) has 5 items ... passed in 0.024s
-    And ensure Content-Type header value is displayed as application/json ... passed in 0.001s
+    And Meta data information has 5 items ... passed in 0.001s
+    And 100 points are only returned ... passed in 0.001s
+    And response is in JSON format ... passed in 0.000s
+    And every entry in Time Series (Daily) has 5 items ... passed in 0.019s
+    And ensure Content-Type header value is displayed as application/json ... passed in 0.000s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -1026,11 +1026,11 @@ Response is {
                     </div>
                 
                     <div class="test outcome outcome-passed">
-                        <a id="9e099591-c18a-4372-8d71-d0982e17a286"></a>
+                        <a id="e560aabc-030d-4613-82ba-18c409719b8c"></a>
                         <table class="proplist">
                             <tr><th>Test case:</th><td><b>Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.1 </b></td></tr>
                             <tr><th>Outcome:</th><td>Passed</td></tr>
-                            <tr><th>Duration:</th><td>0.9 sec</td></tr>
+                            <tr><th>Duration:</th><td>0.8 sec</td></tr>
                         
                             <tr><th>Failed</th><td>None</td></tr>
                         
@@ -1049,14 +1049,14 @@ Response is {
 
 @scenario.begin
   Scenario Outline: Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.1 
-    Given given time series url with required params ... passed in 0.003s
-    When hit url with all optional params with symbol value as IBM ... passed in 0.838s
+    Given given time series url with required params ... passed in 0.002s
+    When hit url with all optional params with symbol value as IBM ... passed in 0.824s
     Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data information has 5 items ... passed in 0.000s
-    And Meta data has 2. Symbol value is same as IBM provided in query param ... passed in 0.001s
+    And Meta data information has 5 items ... passed in 0.001s
+    And Meta data has 2. Symbol value is same as IBM provided in query param ... passed in 0.000s
     And 100 points are only returned ... passed in 0.001s
     And response is in JSON format ... passed in 0.000s
-    And every entry in Time Series (Daily) has 5 items ... passed in 0.025s
+    And every entry in Time Series (Daily) has 5 items ... passed in 0.019s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -1783,11 +1783,11 @@ Response is {
                     </div>
                 
                     <div class="test outcome outcome-passed">
-                        <a id="31efe9fa-2bc7-4433-8e4e-d1b631a7e100"></a>
+                        <a id="e6a579ee-d063-4c55-983a-768589601db9"></a>
                         <table class="proplist">
                             <tr><th>Test case:</th><td><b>Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.2 </b></td></tr>
                             <tr><th>Outcome:</th><td>Passed</td></tr>
-                            <tr><th>Duration:</th><td>1.4 sec</td></tr>
+                            <tr><th>Duration:</th><td>0.8 sec</td></tr>
                         
                             <tr><th>Failed</th><td>None</td></tr>
                         
@@ -1806,14 +1806,14 @@ Response is {
 
 @scenario.begin
   Scenario Outline: Verify response of Time Series (Daily) get request with all optional query parameters with default values -- @1.2 
-    Given given time series url with required params ... passed in 0.004s
-    When hit url with all optional params with symbol value as TSCO.LON ... passed in 1.327s
-    Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data information has 5 items ... passed in 0.001s
-    And Meta data has 2. Symbol value is same as TSCO.LON provided in query param ... passed in 0.001s
+    Given given time series url with required params ... passed in 0.001s
+    When hit url with all optional params with symbol value as TSCO.LON ... passed in 0.796s
+    Then response is seen with status code as 200 ... passed in 0.002s
+    And Meta data information has 5 items ... passed in 0.003s
+    And Meta data has 2. Symbol value is same as TSCO.LON provided in query param ... passed in 0.003s
     And 100 points are only returned ... passed in 0.001s
-    And response is in JSON format ... passed in 0.000s
-    And every entry in Time Series (Daily) has 5 items ... passed in 0.016s
+    And response is in JSON format ... passed in 0.001s
+    And every entry in Time Series (Daily) has 5 items ... passed in 0.034s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -2540,11 +2540,11 @@ Response is {
                     </div>
                 
                     <div class="test outcome outcome-passed">
-                        <a id="3af439fc-908e-44b2-aa2f-80026e5a492d"></a>
+                        <a id="c85a5140-3b7a-44f2-ae96-3666b1464a7c"></a>
                         <table class="proplist">
                             <tr><th>Test case:</th><td><b>Verify response of Time Series (Daily) get request with partial optional query parameters i.e. datatype is missing</b></td></tr>
                             <tr><th>Outcome:</th><td>Passed</td></tr>
-                            <tr><th>Duration:</th><td>0.7 sec</td></tr>
+                            <tr><th>Duration:</th><td>1.2 sec</td></tr>
                         
                             <tr><th>Failed</th><td>None</td></tr>
                         
@@ -2564,10 +2564,10 @@ Response is {
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request with partial optional query parameters i.e. datatype is missing
     Given given time series url with required params ... passed in 0.002s
-    When hit url with partial optional params (without datatype parameter) ... passed in 0.739s
+    When hit url with partial optional params (without datatype parameter) ... passed in 1.182s
     Then response is seen with status code as 200 ... passed in 0.001s
     And 100 points are only returned ... passed in 0.001s
-    And response is in JSON format ... passed in 0.002s
+    And response is in JSON format ... passed in 0.001s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -3294,11 +3294,11 @@ Response is {
                     </div>
                 
                     <div class="test outcome outcome-passed">
-                        <a id="1598cd8a-98ad-47d8-8f58-0ee20c952393"></a>
+                        <a id="561982f7-3ec9-476d-b87e-b5c2fada8483"></a>
                         <table class="proplist">
                             <tr><th>Test case:</th><td><b>Verify response of Time Series (Daily) get request when outputsize is full</b></td></tr>
                             <tr><th>Outcome:</th><td>Passed</td></tr>
-                            <tr><th>Duration:</th><td>68.5 sec</td></tr>
+                            <tr><th>Duration:</th><td>59.2 sec</td></tr>
                         
                             <tr><th>Failed</th><td>None</td></tr>
                         
@@ -3317,13 +3317,13 @@ Response is {
 
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request when outputsize is full
-    Given given time series url with required params ... passed in 0.004s
-    When hit url with with outputsize as full ... passed in 8.235s
+    Given given time series url with required params ... passed in 0.002s
+    When hit url with with outputsize as full ... passed in 7.633s
     Then response is seen with status code as 200 ... passed in 0.001s
-    And Meta data has 4. Output Size value as Full Size ... passed in 0.011s
-    And 20+ years of historical data are returned ... passed in 0.014s
+    And Meta data has 4. Output Size value as Full Size ... passed in 0.009s
+    And 20+ years of historical data are returned ... passed in 0.010s
     And response is in JSON format ... passed in 0.000s
-    And every entry in Time Series (Daily) has 5 items ... passed in 60.264s
+    And every entry in Time Series (Daily) has 5 items ... passed in 51.500s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -41962,7 +41962,7 @@ Response is {
                     </div>
                 
                     <div class="test outcome outcome-passed">
-                        <a id="37908946-df02-4e3e-811f-724ed1716a79"></a>
+                        <a id="7e62bde4-229f-4f8c-8a33-521d19986d9d"></a>
                         <table class="proplist">
                             <tr><th>Test case:</th><td><b>Verify response of Time Series (Daily) get request when datatype is csv</b></td></tr>
                             <tr><th>Outcome:</th><td>Passed</td></tr>
@@ -41986,10 +41986,10 @@ Response is {
 @scenario.begin
   Scenario: Verify response of Time Series (Daily) get request when datatype is csv
     Given given time series url with required params ... passed in 0.002s
-    When hit url with with datatype as csv ... passed in 2.412s
+    When hit url with with datatype as csv ... passed in 2.346s
     Then response is seen with status code as 200 ... passed in 0.000s
-    And csv file is downloaded ... passed in 0.013s
-    And ensure all columns are displayed in file ... passed in 0.003s
+    And csv file is downloaded ... passed in 0.012s
+    And ensure all columns are displayed in file ... passed in 0.002s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -47523,11 +47523,11 @@ Response is timestamp,open,high,low,close,volume
                     </div>
                 
                     <div class="test outcome outcome-passed">
-                        <a id="d671edd6-ffd0-41c9-946b-846ff8a0eb80"></a>
+                        <a id="d4fb1d05-11ef-4c78-8abc-75682d0bcfbf"></a>
                         <table class="proplist">
                             <tr><th>Test case:</th><td><b>Negative test case - Verify response of Time Series (Daily) get request when no key is provided</b></td></tr>
                             <tr><th>Outcome:</th><td>Passed</td></tr>
-                            <tr><th>Duration:</th><td>1.1 sec</td></tr>
+                            <tr><th>Duration:</th><td>0.9 sec</td></tr>
                         
                             <tr><th>Failed</th><td>None</td></tr>
                         
@@ -47546,8 +47546,8 @@ Response is timestamp,open,high,low,close,volume
 
 @scenario.begin
   Scenario: Negative test case - Verify response of Time Series (Daily) get request when no key is provided
-    Given given time series url with required params ... passed in 0.003s
-    When hit url without key ... passed in 1.128s
+    Given given time series url with required params ... passed in 0.001s
+    When hit url without key ... passed in 0.911s
     Then reponse should display error ... passed in 0.002s
 
 @scenario.end
